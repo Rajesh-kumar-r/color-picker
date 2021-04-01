@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<HTML>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+        <title>Color picker</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Color picker</h1>
+            <div class="row">
+                <div class="col-sm-7">
+                    <h4>Text</h4>
+                    <div class="user-input"><input type="text" id="userText" placeholder="Text"></div>
+                    <h4>Text color</h4>
+                    <div class="user-input">
+                        <p id="userTextColor"></p>
+                        <div class="text-colorpicker" id="textColorPalette">
+                            <table class="colors" id="txtColor">
+                                <tr>
+                                    <td><button title="color" style="background-color: #b3ccff"></button></td>
+                                    <td><button title="color" style="background-color: #80aaff"></button></td>
+                                    <td><button title="color" style="background-color: #3377ff"></button></td>
+                                    <td><button title="color" style="background-color: #004de6"></button></td>
+                                    <td><button title="color" style="background-color: #002266"></button></td>
+                                    <td><button title="color" style="background-color: #001133"></button></td>
+                                </tr>
+                                <tr>
+                                    <td><button title="color" style="background-color: #ffb3d1"></button></td>
+                                    <td><button title="color" style="background-color: #ff66a3"></button></td>
+                                    <td><button title="color" style="background-color: #ff3385"></button></td>
+                                    <td><button title="color" style="background-color: #ff0066"></button></td>
+                                    <td><button title="color" style="background-color: #b30047"></button></td>
+                                    <td><button title="color" style="background-color: #800033"></button></td>
+                                </tr>
+                                <tr>
+                                    <td><button title="color" style="background-color: #F8A767"></button></td>
+                                    <td><button title="color" style="background-color: #FE905C"></button></td>
+                                    <td><button title="color" style="background-color: #FF702E"></button></td>
+                                    <td><button title="color" style="background-color: #DC6027"></button></td>
+                                    <td><button title="color" style="background-color: #B4401B"></button></td>
+                                    <td><button title="color" style="background-color: #973B11"></button></td>
+                                </tr>
+                                <tr>
+                                    <td><button title="color" style="background-color: #FFFC6D"></button></td>
+                                    <td><button title="color" style="background-color: #FFF857"></button></td>
+                                    <td><button title="color" style="background-color: #FFFC26"></button></td>
+                                    <td><button title="color" style="background-color: #D3C82D"></button></td>
+                                    <td><button title="color" style="background-color: #B2B422"></button></td>
+                                    <td><button title="color" style="background-color: #98971C"></button></td>
+                                </tr>
+                                <tr>
+                                    <td><button title="color" style="background-color: #AFE6AD"></button></td>
+                                    <td><button title="color" style="background-color: #88DC8C"></button></td>
+                                    <td><button title="color" style="background-color: #6BC16E"></button></td>
+                                    <td><button title="color" style="background-color: #59C05D"></button></td>
+                                    <td><button title="color" style="background-color: #38983B"></button></td>
+                                    <td><button title="color" style="background-color: #306F31"></button></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <h4>Background color</h4>
+                    <div class="user-input">
+                        <p id="userBgColor"></p>
+                        <div class="background-colorpicker" id="bgcolorPalette">
+                            <table class="colors" id="backgndColor">
+                                <tr>
+                                    <td><button style="background-color: #b3ccff"></button></td>
+                                    <td><button style="background-color: #80aaff"></button></td>
+                                    <td><button style="background-color: #3377ff"></button></td>
+                                    <td><button style="background-color: #004de6"></button></td>
+                                    <td><button style="background-color: #002266"></button></td>
+                                    <td><button style="background-color: #001133"></button></td>
+                                </tr>
+                                <tr>
+                                    <td><button style="background-color: #ffb3d1"></button></td>
+                                    <td><button style="background-color: #ff66a3"></button></td>
+                                    <td><button style="background-color: #ff3385"></button></td>
+                                    <td><button style="background-color: #ff0066"></button></td>
+                                    <td><button style="background-color: #b30047"></button></td>
+                                    <td><button style="background-color: #800033"></button></td>
+                                </tr>
+                                <tr>
+                                    <td><button style="background-color: #F8A767"></button></td>
+                                    <td><button style="background-color: #FE905C"></button></td>
+                                    <td><button style="background-color: #FF702E"></button></td>
+                                    <td><button style="background-color: #DC6027"></button></td>
+                                    <td><button style="background-color: #B4401B"></button></td>
+                                    <td><button style="background-color: #973B11"></button></td>
+                                </tr>
+                                <tr>
+                                    <td><button style="background-color: #FFFC6D"></button></td>
+                                    <td><button style="background-color: #FFF857"></button></td>
+                                    <td><button style="background-color: #FFFC26"></button></td>
+                                    <td><button style="background-color: #D3C82D"></button></td>
+                                    <td><button style="background-color: #B2B422"></button></td>
+                                    <td><button style="background-color: #98971C"></button></td>
+                                </tr>
+                                <tr>
+                                    <td><button style="background-color: #AFE6AD"></button></td>
+                                    <td><button style="background-color: #88DC8C"></button></td>
+                                    <td><button style="background-color: #6BC16E"></button></td>
+                                    <td><button style="background-color: #59C05D"></button></td>
+                                    <td><button style="background-color: #38983B"></button></td>
+                                    <td><button style="background-color: #306F31"></button></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <h4>Preview</h4>
+                    <div class="preview">
+                        <p id="previewText">Text</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</HTML>
